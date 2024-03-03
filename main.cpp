@@ -337,21 +337,25 @@ public:
 
     void removeFlight(const std::string& flightNumber){
 
-        bool found(false);
-        for(size_t i = 0 ; i < flights.size(); i++){
-            if(flights[i]->getFlightNo() == flightNumber){
+        if(flights.size() != 0){
+            bool found(false);
+            for(size_t i = 0 ; i < flights.size(); i++){
+                if(flights[i]->getFlightNo() == flightNumber){
 
-                cout << "Flight with number: " << flights[i]->getFlightNo() << " is removed" << endl;
-                found = true;
-                flights.erase(flights.begin() + i);
+                    cout << "Flight with number: " << flights[i]->getFlightNo() << " is removed" << endl;
+                    found = true;
+                    flights.erase(flights.begin() + i);
 
-                cout << i << endl;
-
-
+                }
             }
+            if(found == false)
+                cout << "Couldn't find Flight with number: " << flightNumber << endl;
+
         }
-        if(found == false)
-            cout << "Couldn't find Flight with number: " << flightNumber << endl;
+        else
+            cout << "There are no flights yet."<< endl;
+
+
     }
 
     void listAllFlights(){
@@ -528,7 +532,7 @@ int main()
 
                 cout << endl << endl;
 
-                cout << "||==================================||" << endl;
+                cout << "||==================================================||" << endl;
                 flight_menu("1. Reserve a Seat");
                 flight_menu("2. Cancel Reservation");
                 flight_menu("3. View Passenger list");
