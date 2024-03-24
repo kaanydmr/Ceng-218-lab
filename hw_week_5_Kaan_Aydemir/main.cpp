@@ -42,6 +42,7 @@ int main() {
                 cout << "What string you want to store: " ;
                 cin >> data;
                 list.push_back(data);
+                cout << "Node with data: " << data << " is added" << endl;
                 break;
 
             case 2:
@@ -49,6 +50,7 @@ int main() {
                 cout << "What element do you want to remove: ";
                 cin >> data;
                 list.erase(data);
+                cout << "Node containing " << data << " is erased" << endl;
                 break;
 
             case 3:
@@ -65,6 +67,7 @@ int main() {
                 cout << "What string you want to store: " ;
                 cin >> data;
                 list.insert_at(index, data);
+                cout << "Node containing " << data << " at index "<< index << " added" << endl;
                 break;
 
             case 5:
@@ -73,6 +76,7 @@ int main() {
                 cout << "What string you want to store: " ;
                 cin >> data;
                 list.insert_after(index, data);
+                cout << "Node containing " << data << " after index "<< index << " added" << endl;
                 break;
 
             case 6:
@@ -80,6 +84,7 @@ int main() {
                 cout << "What index you want to remove an element: ";
                 cin >> index;
                 list.erase_at(index);
+                cout << "Node at index: " << index << " is erased" << endl;
                 break;
 
             case 7:
@@ -101,6 +106,7 @@ int main() {
             case 10:
 
                 list.clear();
+                cout << "List is now empty" << endl;
                 break;
 
             case 11:
@@ -130,6 +136,7 @@ int main() {
             case 13:
 
                 list.moveSmallestToFront();
+                cout << "List updated." << endl;
 
                 break;
 
