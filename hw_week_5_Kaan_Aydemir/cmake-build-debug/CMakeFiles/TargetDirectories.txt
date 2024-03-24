@@ -1,0 +1,3 @@
+/Users/kaan/Desktop/hw_week_5_Kaan_Aydemir/cmake-build-debug/CMakeFiles/untitled8.dir
+/Users/kaan/Desktop/hw_week_5_Kaan_Aydemir/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kaan/Desktop/hw_week_5_Kaan_Aydemir/cmake-build-debug/CMakeFiles/rebuild_cache.dir
